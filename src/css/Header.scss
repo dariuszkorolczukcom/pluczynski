@@ -1,0 +1,40 @@
+.Header {
+  margin:0;
+  padding:0;
+  text-align: center;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  color: #fff;
+  background-color: rgba(0,0,0,0)
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(0,0,0,.5);
+  box-shadow: 0px 0px 30px 40px rgba(0,0,0,.5);
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: rgb(194, 194, 194);
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  color: rgb(255, 255, 255);
+}
+
+.Title {
+  color: rgb(194, 194, 194);
+  float: left;
+  padding: 16px;
+}

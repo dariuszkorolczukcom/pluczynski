@@ -1,0 +1,17 @@
+.Vinyl-spin {
+  position: absolute;
+  right: 10vmin;
+  bottom: 10vmin;
+  animation: Vinyl-spin infinite 7s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@keyframes Vinyl-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
