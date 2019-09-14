@@ -5,7 +5,7 @@ import LoadingComponent from "../Components/LoadingComponent";
 export default function HomeContainer() {
     return (
         <div>
-            <LoadingComponent />
+            {/* <LoadingComponent /> */}
         </div>
     );
 }
