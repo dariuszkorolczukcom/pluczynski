@@ -41,7 +41,11 @@ export default function MobileMenuContainer() {
         <div
             className={"menuList"}>
             <span className={"menuButton"} color="white" onClick={toggleDrawer('left', true)}><MenuIcon /></span>
-            <SwipeableDrawer width="50%" open={state.left} onClose={toggleDrawer('left', false)}>
+            <SwipeableDrawer
+                open={state.left}
+                onClose={toggleDrawer('left', false)}
+                onOpen={toggleDrawer('left', true)}
+            >
                 {sideList('left')}
             </SwipeableDrawer>
         </div >
