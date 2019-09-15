@@ -40,21 +40,21 @@ export default function MobileMenuContainer() {
             onClick={toggleDrawer(side, false)}
             onKeyDown={toggleDrawer(side, false)}
         >
-            <List>
+            <List className={"menuList"}>
                 <ListItem>
-                    <Link className={"menuListItem"} to="/about">About</Link>
-                </ListItem>
-                <ListItem>
-                    <Link className={"menuListItem"} to="/links">Links</Link>
-                </ListItem>
-                <ListItem>
-                    <Link className={"menuListItem"} to="/gallery">Gallery</Link>
+                    <Link className={"menuListItem"} to="/">Home</Link>
                 </ListItem>
                 <ListItem>
                     <Link className={"menuListItem"} to="/music">Music</Link>
                 </ListItem>
                 <ListItem>
-                    <Link className={"menuListItem"} to="/">Home</Link>
+                    <Link className={"menuListItem"} to="/gallery">Gallery</Link>
+                </ListItem>
+                <ListItem>
+                    <Link className={"menuListItem"} to="/links">Links</Link>
+                </ListItem>
+                <ListItem>
+                    <Link className={"menuListItem"} to="/about">About</Link>
                 </ListItem>
             </List>
         </div>
