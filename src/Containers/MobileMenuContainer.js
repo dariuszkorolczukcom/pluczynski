@@ -1,4 +1,5 @@
 import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
 import { Router, Link } from "react-router-dom";
 import SwipeableDrawer from '@material-ui/core/SwipeableDrawer';
 import Button from '@material-ui/core/Button';
@@ -8,7 +9,19 @@ import ListItem from '@material-ui/core/ListItem';
 import MenuIcon from '@material-ui/icons/Menu';
 import '../css/App.scss';
 
+const useStyles = makeStyles({
+    list: {
+        width: 200,
+        height: "100%",
+        backgroundColor: "#000",
+    },
+    fullList: {
+        width: 'auto'
+    },
+});
+
 export default function MobileMenuContainer() {
+    const classes = useStyles();
     const [state, setState] = React.useState({
         left: false,
     });
@@ -22,30 +35,43 @@ export default function MobileMenuContainer() {
     };
     const sideList = side => (
         <div
-            className={"drawer"}
+            className={classes.list}
             role="presentation"
             onClick={toggleDrawer(side, false)}
             onKeyDown={toggleDrawer(side, false)}
         >
             <List>
-                <ListItem><Link className={"menuListItem"} to="/about">About</Link></ListItem>
-                <ListItem><Link className={"menuListItem"} to="/links">Links</Link></ListItem>
-                <ListItem><Link className={"menuListItem"} to="/gallery">Gallery</Link></ListItem>
-                <ListItem><Link className={"menuListItem"} to="/music">Music</Link></ListItem>
-                <ListItem><Link className={"menuListItem"} to="/">Home</Link></ListItem>
+                <ListItem>
+                    <Link className={"menuListItem"} to="/about">About</Link>
+                </ListItem>
+                <ListItem>
+                    <Link className={"menuListItem"} to="/links">Links</Link>
+                </ListItem>
+                <ListItem>
+                    <Link className={"menuListItem"} to="/gallery">Gallery</Link>
+                </ListItem>
+                <ListItem>
+                    <Link className={"menuListItem"} to="/music">Music</Link>
+                </ListItem>
+                <ListItem>
+                    <Link className={"menuListItem"} to="/">Home</Link>
+                </ListItem>
             </List>
         </div>
     );
 
     return (
-        <div
-            className={"menuList"}>
-            <span className={"menuButton"} color="white" onClick={toggleDrawer('left', true)}><MenuIcon /></span>
+        <div>
+            <span className={"menuButton"}
+                color="white"
+                onClick={toggleDrawer('left', true)}>
+                <MenuIcon />
+            </span>
             <SwipeableDrawer
+                className={classes.fullList}
                 open={state.left}
                 onClose={toggleDrawer('left', false)}
-                onOpen={toggleDrawer('left', true)}
-            >
+                onOpen={toggleDrawer('left', true)}>
                 {sideList('left')}
             </SwipeableDrawer>
         </div >

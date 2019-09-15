@@ -2,6 +2,7 @@ import React from 'react';
 import '../css/Loading.scss';
 import homeImage from '../css/img/vinyl2.png';
 import Playlist from 'react-mp3-player';
+import ReactPlayer from 'react-player';
 
 const tracks = [
     {
@@ -22,7 +23,7 @@ const playlistOverideStylingOpts = {
 export default function PlayerComponent() {
     return (
         <React.Fragment>
-            <Playlist tracks={tracks} opts={playlistOverideStylingOpts} />
+            <ReactPlayer url='https://www.youtube.com/watch?v=n-HrEs17fSk' />
         </React.Fragment>
     );
 }

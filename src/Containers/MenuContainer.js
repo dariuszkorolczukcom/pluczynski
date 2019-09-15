@@ -4,12 +4,12 @@ import '../css/App.scss';
 
 export default function MenuContainer() {
     return (
-        <ul>
-            <li><Link to="/about">About</Link></li>
-            <li><Link to="/links">Links</Link></li>
-            <li><Link to="/gallery">Gallery</Link></li>
-            <li><Link to="/music">Music</Link></li>
-            <li><Link to="/">Home</Link></li>
+        <ul className="menuList">
+            <li className="menuListItem"><Link to="/about">About</Link></li>
+            <li className="menuListItem"><Link to="/links">Links</Link></li>
+            <li className="menuListItem"><Link to="/gallery">Gallery</Link></li>
+            <li className="menuListItem"><Link to="/music">Music</Link></li>
+            <li className="menuListItem"><Link to="/">Home</Link></li>
         </ul>
     );
 }
