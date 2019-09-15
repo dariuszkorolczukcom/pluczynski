@@ -36,7 +36,32 @@
   border: none;
 }
 
-.playerContainer {
-  padding-top:100px;
-  padding-left:300px;
+@media only screen and (max-width: 600px) {
+  .playerContainer {
+    padding-top:3rem;
+    padding-left:0px;
+  }
 }
+
+@media only screen and (min-width: 600px) {
+  .playerContainer {
+    padding-top:3rem;
+    padding-left:0px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .playerContainer {
+    padding-top:3rem;
+    padding-left:100px;
+  }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .playerContainer {
+    padding-top:3rem;
+    padding-left:300px;
+  }
+} 

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../css/Gallery.scss';
-import { AutoRotatingCarousel } from 'material-auto-rotating-carousel';
+import { Carousel } from 'react-responsive-carousel';
 
 const photos = [
     {
@@ -34,17 +34,20 @@ export default class GalleryComponent extends Component {
     render() {
         return (
             <div className={"galleryContainer"}>
-                <AutoRotatingCarousel
-                    // label='Get started'
-                    open={this.state.open}
-                    onClose={() => this.setState({ open: false })}
-                    onStart={() => this.setState({ open: false })}
-                // style={{ position: 'absolute', top: "3rem" }}
-                >
-                    <img key={1} className={"carouselImage"} src={"https://patrykluczynski.s3-eu-west-1.amazonaws.com/photo/img0001.jpg"} />
-                    <img key={1} className={"carouselImage"} src={"https://patrykluczynski.s3-eu-west-1.amazonaws.com/photo/img0014.jpg"} />
-                    <img key={1} className={"carouselImage"} src={"https://patrykluczynski.s3-eu-west-1.amazonaws.com/photo/img0044.jpg"} />
-                </AutoRotatingCarousel>
+                <Carousel>
+                    <div>
+                        <img src="https://patrykluczynski.s3-eu-west-1.amazonaws.com/photo/img0001.jpg" />
+                        <p className="legend">Koncert LUPA 1</p>
+                    </div>
+                    <div>
+                        <img src="https://patrykluczynski.s3-eu-west-1.amazonaws.com/photo/img0014.jpg" />
+                        <p className="legend">Koncert LUPA 2</p>
+                    </div>
+                    <div>
+                        <img src="https://patrykluczynski.s3-eu-west-1.amazonaws.com/photo/img0044.jpg" />
+                        <p className="legend">Koncert LUPA 3</p>
+                    </div>
+                </Carousel>
             </div>
         )
     }
