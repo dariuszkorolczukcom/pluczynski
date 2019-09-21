@@ -26,6 +26,7 @@ e. Others
 /* a. Webfonts and Icon fonts
  ------------------------------------------------------------------ */
 
+ @import url('https://fonts.googleapis.com/css?family=Six+Caps&display=swap');
 @import url("fonts.css");
 @import url("fontello/css/fontello.css");
 @import url("font-awesome/css/font-awesome.min.css");

@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Myspace from 'css/';
 export default class Header extends Component {
   render() {
     let resumeData = this.props.resumeData;
@@ -59,7 +58,7 @@ export default class Header extends Component {
 
           <div className="row banner">
             <div className="banner-text">
-              <h1 className="responsive-headline">Patryk Luczynski</h1>
+              <h1 className="responsive-headline" style={{ fontFamily: "'Six Caps', sans-serif" }}>Patryk Luczynski</h1>
               <h3 style={{ color: "#fff", fontFamily: "sans-serif " }}>
                 professional music production
               </h3>
