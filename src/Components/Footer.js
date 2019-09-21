@@ -25,7 +25,7 @@ export default class Footer extends Component {
             </a>
           </div>
         </div>
-        <span>&copy; Dariusz Korolczuk 2019</span>
+        <span>&copy; <a rel="noopener noreferrer" href="https://dariuszkorolczuk.com/" target="_blank">Dariusz Korolczuk</a> 2019</span>
       </footer>
     );
   }
