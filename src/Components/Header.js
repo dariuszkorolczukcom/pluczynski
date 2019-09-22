@@ -25,7 +25,7 @@ export default class Header extends Component {
               </li>
               <li>
                 <a className="smoothscroll" href="#resume">
-                  Bands
+                  Production
                 </a>
               </li>
               {/* <li>

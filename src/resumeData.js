@@ -37,25 +37,39 @@ let resumeData = {
   //       "Learned a lot about society and quit the uni on my 5th year to start a job"
   //   }
   // ],
-  bands: [
+  albums: [
     {
-      BandName: "Brainwash",
-      specialization: "producer / guitar",
-      Achievements:
-        "2nd place in Zgrzyty"
+      band: "LUPA",
+      title: "Demony",
+      date: 2015,
+      cover:
+        "images/covers/lupa_demony.jpg",
+      url: "https://www.youtube.com/watch?v=NZmlcwkXmuw&feature=youtu.be"
     },
     {
-      BandName: "In Your Fear",
-      specialization: "producer / guitar",
-      Achievements:
-        "Kilka Slow on Eska Rock"
+      band: "LUPA",
+      title: "Tu i teraz",
+      date: 2019,
+      cover:
+        "images/covers/lupa_tu.jpg",
+      url: "https://www.youtube.com/watch?v=Aro0zJYASJE&feature=youtu.be"
     },
     {
-      BandName: "LuPa",
-      specialization: "producer / guitar",
-      Achievements:
-        "Lato z radiem Award"
-    }
+      band: "Gypsy Caravan",
+      title: "Mrok (single)",
+      date: 2018,
+      cover:
+        "images/covers/13254463_999956136756864_2955671457754574518_n.jpg",
+      url: "https://www.youtube.com/watch?v=LY-QrByaylc&feature=youtu.be"
+    },
+    {
+      band: "Poetyka",
+      title: "Przed siebie (single)",
+      date: 2014,
+      cover:
+        "images/covers/poetyka.jpg",
+      url: "https://www.youtube.com/watch?v=-NxGXyTkNvI&feature=youtu.be"
+    },
   ],
   // skillsDescription: "Instruments",
   // skills: [
@@ -101,7 +115,13 @@ let resumeData = {
       title: "pop-rock2",
       cover: 'images/vinyl2.png',
       artist: ["Patryk Luczynski"]
-    }
+    },
+    // {
+    //   url: "https://drive.google.com/uc?export=download&id=1n0-4-BfVlbQpno93DvpxR3JIiprtZEvf",
+    //   title: "gdrive",
+    //   cover: 'images/vinyl2.png',
+    //   artist: ["Patryk Luczynski"]
+    // }
   ],
   photos: [
     {
