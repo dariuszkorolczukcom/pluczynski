@@ -54,7 +54,7 @@ export default class Resume extends Component {
                             {item.MonthOfLeaving} {item.YearOfLeaving}
                           </em>
                         </p>
-                        <p>{item.Achievements}</p>
+                        {/* <p>{item.Achievements}</p> */}
                       </div>
                     </div>
                   );
