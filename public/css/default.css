@@ -804,7 +804,7 @@ properly.
 }
 
 .dragon {
-   position: absolute;
+   position: fixed;
    z-index:100;
    left:-10%;
    top:50%;
