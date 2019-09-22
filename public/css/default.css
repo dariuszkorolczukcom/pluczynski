@@ -806,25 +806,25 @@ properly.
 .dragon {
    position: absolute;
    z-index:100;
-   left:0px;
+   left:-10%;
    top:50%;
-   width: 100px;
-   height: 100px;
-   -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
-   -webkit-animation-duration: 6s; /* Safari 4.0 - 8.0 */
-   animation-name: example;
-   animation-duration: 6s;
+   width: 181px;
+   height: 120px;
+   -webkit-animation-name: dragon; /* Safari 4.0 - 8.0 */
+   -webkit-animation-duration: 7.5s; /* Safari 4.0 - 8.0 */
+   animation-name: dragon;
+   animation-duration: 7.5s;
 }
 
  /* Safari 4.0 - 8.0 */
-@-webkit-keyframes example {
-   from {left: -5%;}
+@-webkit-keyframes dragon {
+   from {left: -10%;}
    to {left: 100%;}
 }
 
  /* Standard syntax */
-@keyframes example {
-   from {left: -5%;}
+@keyframes dragon {
+   from {left: -10%;}
    to {left: 100%;}
 }
 
