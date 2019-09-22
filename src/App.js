@@ -9,6 +9,90 @@ import ContactUs from "./Components/ContactUs";
 import Footer from "./Components/Footer";
 import resumeData from "./resumeData";
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { keys: [], dragon: false };
+    this.handleKeyPress = this.handleKeyPress.bind(this);
+  }
+
+  componentDidMount() {
+    document.addEventListener('keydown', this.handleKeyPress);
+  }
+
+  handleKeyPress(event) {
+    console.log(event.keyCode)
+    if (this.state.dragon === false) {
+      if (event.keyCode === 51) {
+        let newKeys = [51]
+        this.setState({ keys: newKeys })
+      } else if (event.keyCode === 50) {
+        if (this.state.keys = [51]) {
+          let newKeys = [51, 50]
+          this.setState({ keys: newKeys })
+        } else {
+          this.setState({ keys: [] })
+        }
+      } else if (event.keyCode === 49) {
+        if (this.state.keys = [51, 50]) {
+          let newKeys = [51, 50, 49]
+          this.setState({ keys: newKeys })
+        } else {
+          this.setState({ keys: [] })
+        }
+      } else if (event.keyCode === 54) {
+        if (this.state.keys = [51, 50, 49]) {
+          let newKeys = [51, 50, 49, 54]
+          this.setState({ keys: newKeys })
+        } else {
+          this.setState({ keys: [] })
+        }
+      } else if (event.keyCode === 55) {
+        if (this.state.keys = [51, 50, 49, 54]) {
+          this.runDragon()
+        } else {
+          this.setState({ keys: [] })
+        }
+      } else if (event.keyCode === 99) {
+        let newKeys = [99]
+        this.setState({ keys: newKeys })
+      } else if (event.keyCode === 98) {
+        if (this.state.keys = [99]) {
+          let newKeys = [99, 98]
+          this.setState({ keys: newKeys })
+        } else {
+          this.setState({ keys: [] })
+        }
+      } else if (event.keyCode === 97) {
+        if (this.state.keys = [99, 98]) {
+          let newKeys = [99, 98, 97]
+          this.setState({ keys: newKeys })
+        } else {
+          this.setState({ keys: [] })
+        }
+      } else if (event.keyCode === 102) {
+        if (this.state.keys = [99, 98, 97]) {
+          let newKeys = [99, 98, 97, 102]
+          this.setState({ keys: newKeys })
+        } else {
+          this.setState({ keys: [] })
+        }
+      } else if (event.keyCode === 103) {
+        if (this.state.keys = [99, 98, 97, 102]) {
+          this.runDragon()
+        } else {
+          this.setState({ keys: [] })
+        }
+      } else {
+        this.setState({ keys: [] })
+      }
+    }
+  }
+
+  runDragon = () => {
+    this.setState({ dragon: true })
+    setTimeout(() => { this.setState({ dragon: false }); }, 6000);
+  }
+
   render() {
     return (
       <div className="App">
@@ -20,6 +104,9 @@ class App extends Component {
         <Testimonials resumeData={resumeData} />
         <ContactUs resumeData={resumeData} />
         <Footer resumeData={resumeData} />
+        {this.state.dragon &&
+          <img className="dragon" src="css/dragon.gif" />
+        }
       </div>
     );
   }
