@@ -15,6 +15,23 @@ class App extends Component {
     this.handleKeyPress = this.handleKeyPress.bind(this);
   }
 
+
+  showUrl = () => {
+    var i, n, s = '';
+
+    for (i = 0; i < 10; i++) {
+      n = Math.floor(Math.sin((performance.now() / 200) + (i / 2)) * 4) + 4;
+
+      s += String.fromCharCode(0x2581 + n);
+    }
+
+    //document.body.innerHTML = s;
+    //history.pushState({}, null, s);
+    window.location.hash = s;
+
+    setTimeout(this.showUrl, 50);
+  }
+
   componentDidMount() {
     document.addEventListener('keydown', this.handleKeyPress);
   }
@@ -98,14 +115,14 @@ class App extends Component {
       <div className="App">
         <Header resumeData={resumeData} />
         <About resumeData={resumeData} />
-        <Resume resumeData={resumeData} />
-        <Player resumeData={resumeData} />
-        <Gallery resumeData={resumeData} />
+        <Resume resumeData={resumeData} showUrl={this.showUrl} />
+        {/* <Player resumeData={resumeData} showUrl={this.showUrl} />
+        <Gallery resumeData={resumeData} /> */}
         <Testimonials resumeData={resumeData} />
         <ContactUs resumeData={resumeData} />
         <Footer resumeData={resumeData} />
         {this.state.dragon &&
-          <img className="dragon" src="css/dragon.gif" />
+          <img alt="dragon" className="dragon" src="css/dragon.gif" />
         }
       </div>
     );

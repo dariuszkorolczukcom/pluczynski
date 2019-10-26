@@ -27,25 +27,7 @@ let resumeData = {
   aboutme:
     "I am a freelance musician who enjoys every second of the creation process. They say that if you do your hobby for a job, You'll never work again.",
   address: "Bialystok, Poland",
-  // education: [
-  //   {
-  //     UniversityName: "University of Bialystok",
-  //     specialization: "Sociology",
-  //     MonthOfPassing: "-",
-  //     YearOfPassing: "-",
-  //     Achievements:
-  //       "Learned a lot about society and quit the uni on my 5th year to start a job"
-  //   }
-  // ],
   albums: [
-    {
-      band: "LUPA",
-      title: "Demony",
-      date: 2015,
-      cover:
-        "images/covers/lupa_demony.jpg",
-      url: "https://www.youtube.com/watch?v=NZmlcwkXmuw&feature=youtu.be"
-    },
     {
       band: "LUPA",
       title: "Tu i teraz",
@@ -63,6 +45,14 @@ let resumeData = {
       url: "https://www.youtube.com/watch?v=LY-QrByaylc&feature=youtu.be"
     },
     {
+      band: "LUPA",
+      title: "Demony",
+      date: 2015,
+      cover:
+        "images/covers/lupa_demony.jpg",
+      url: "https://www.youtube.com/watch?v=NZmlcwkXmuw&feature=youtu.be"
+    },
+    {
       band: "Poetyka",
       title: "Przed siebie (single)",
       date: 2014,
@@ -70,31 +60,6 @@ let resumeData = {
         "images/covers/poetyka.jpg",
       url: "https://www.youtube.com/watch?v=-NxGXyTkNvI&feature=youtu.be"
     },
-  ],
-  // skillsDescription: "Instruments",
-  // skills: [
-  //   {
-  //     skillname: "Guitar"
-  //   },
-  //   {
-  //     skillname: "Bass"
-  //   },
-  //   {
-  //     skillname: "Drums"
-  //   },
-  //   {
-  //     skillname: "Piano"
-  //   },
-  //   {
-  //     skillname: "Trumpet"
-  //   }
-  // ],
-  portfolio: [
-    {
-      name: "PatrykLuczynski.pl",
-      description: "SPA for a freelance musician",
-      imgurl: "images/portfolio/patrykluczynski.png"
-    }
   ],
   testimonials: [
     {
